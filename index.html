@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Britany Escalona B. | Psicóloga Clínica en Coronel</title>
+    <meta name="description" content="Psicoterapia clínica online y presencial con Britany Escalona B. Espacio seguro en Coronel para sentir, comprender y sanar. Atención en violencia de género, duelo, trauma y más.">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- LOADER CON LOGO -->
+    <div class="loader-overlay" id="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="loader-logo-circle">
+                    <img src="logo-britany.png" alt="Logo Britany Escalona B." onerror="this.style.display='none'" />
+                    <span class="loader-logo-fallback" id="loader-fallback">E.B</span>
+                </div>
+            </div>
+            <p class="loader-text">Cargando...</p>
+        </div>
+    </div>
+
+    <header class="top-bar">
+        <div class="logo-area">
+            <div class="logo-circle">
+                <!-- Usa aquí el logo real: guarda el archivo como 'logo-britany.png' en esta carpeta -->
+                <img src="logo-britany.png" alt="Logo Britany Escalona B." onerror="this.classList.add('hide');" />
+                <span class="logo-fallback">E.B</span>
+            </div>
+            <div class="logo-texts">
+                <span class="brand-name">Britany Escalona B.</span>
+                <span class="brand-subtitle">Psicóloga Clínica</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#formacion">Formación</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="btn-emergencia-header" onclick="openCrisisModal()">En crisis</button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="pill">Consulta en Coronel · Online & Presencial</span>
+                <h1>Un espacio seguro para sentir, comprender y sanar ✨</h1>
+                <p>
+                    Psicoterapia clínica con enfoque humano, perspectiva de género y mirada sensible al trauma.
+                    Acompañamiento respetuoso en procesos de violencia de género, duelo, ansiedad y otras experiencias vitales.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/56946842365" target="_blank" class="btn-primary">Agendar por WhatsApp</a>
+                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
+                    <button class="btn-outline" type="button" onclick="openCrisisModal()">⚠ Estoy en crisis ahora</button>
+                </div>
+                <div class="hero-badges">
+                    <span>Violencia de género y diversidad sexual</span>
+                    <span>Duelo y duelo oncológico</span>
+                    <span>Trauma complejo infantil y adolescente</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo-card">
+                    <!-- Para personalizar: guarda una foto como 'britany-escalona.jpg' en esta carpeta -->
+                    <div class="photo-ring">
+                        <img src="britany-escalona.jpg" alt="Britany Escalona B., Psicóloga Clínica" />
+                    </div>
+                    <div class="hero-photo-info">
+                        <p class="name">Britany Escalona B.</p>
+                        <p class="role">Psicóloga Clínica</p>
+                        <p class="phrase">“Un espacio seguro, para sentir, comprender y sanar.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre" class="section sobre">
+            <div class="section-header">
+                <h2>Sobre mí</h2>
+                <p>Psicoterapia cercana, respetuosa y basada en evidencia, al servicio de tu historia.</p>
+            </div>
+            <div class="sobre-layout">
+                <div class="sobre-bio">
+                    <p>
+                        Soy <strong>Britany Escalona B.</strong>, psicóloga clínica dedicada al acompañamiento de
+                        personas que atraviesan procesos de violencia de género, diversidad sexual, duelo, trauma,
+                        ansiedad y otras experiencias que dejan huella en la vida cotidiana.
+                    </p>
+                    <p>
+                        En sesión encontrarás un espacio cálido, sin juicios, donde lo importante es tu experiencia.
+                        Trabajaremos a tu ritmo, construyendo herramientas que te permitan habitar tu historia con
+                        más calma, conciencia y cuidado propio.
+                    </p>
+                    <p>
+                        Mi trabajo integra distintas corrientes de la psicología con enfoque sensible al trauma,
+                        perspectiva de género y mirada integral de la persona.
+                    </p>
+                </div>
+                <div class="sobre-highlight">
+                    <div class="sobre-tag">Online · Presencial en Coronel</div>
+                    <p class="sobre-quote">
+                        “Pedir ayuda no es debilidad. Es un acto profundo de respeto hacia ti y tu historia.”
+                    </p>
+                    <ul class="sobre-list">
+                        <li>Escucha activa y validación emocional.</li>
+                        <li>Procesos personalizados según tu necesidad.</li>
+                        <li>Valores diferenciados según situación.</li>
+                    </ul>
+                    <a href="https://wa.me/56946842365" target="_blank" class="btn-primary full">Quiero coordinar una sesión</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section servicios">
+            <div class="section-header">
+                <h2>Servicios</h2>
+                <p>Opciones de atención pensadas para acompañarte de manera flexible y humana.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Psicoterapia individual</h3>
+                    <p>
+                        Sesiones de 50 minutos centradas en tus emociones, experiencias y objetivos personales.
+                        Un espacio para mirarte con cuidado y construir nuevas formas de habitar tu vida.
+                    </p>
+                    <span class="card-pill">Adultos · Jóvenes</span>
+                </article>
+
+                <article class="card">
+                    <h3>Atención online-presencial</h3>
+                    <p>
+                        Puedes elegir entre atención en box terapéutico en Coronel o por videollamada,
+                        manteniendo la misma calidez, confidencialidad y contención emocional.
+                    </p>
+                    <span class="card-pill">Modalidad híbrida</span>
+                </article>
+
+                <article class="card">
+                    <h3>Psicoterapia breve</h3>
+                    <p>
+                        Procesos focalizados para momentos de crisis, decisiones importantes o temas específicos
+                        que requieren contención y orientación en un tiempo acotado.
+                    </p>
+                    <span class="card-pill">Orientada a objetivos</span>
+                </article>
+
+                <article class="card">
+                    <h3>Valores diferenciados</h3>
+                    <p>
+                        Posibilidad de ajustar el valor de las sesiones según la situación particular, buscando
+                        que el acceso a la salud mental sea más cercano y humano.
+                    </p>
+                    <span class="card-pill">Accesibilidad</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- FORMACION -->
+        <section id="formacion" class="section formacion">
+            <div class="section-header">
+                <h2>Formación académica y experiencial</h2>
+                <p>Certificaciones y experiencias que respaldan el acompañamiento terapéutico.</p>
+            </div>
+            <div class="chips-grid">
+                <div class="chip">Certificada en Violencia de género y diversidad sexual</div>
+                <div class="chip">Facilitadora de competencias para la integración social</div>
+                <div class="chip">Certificada en develación de abuso sexual</div>
+                <div class="chip">Certificada en acompañamiento del Duelo y Duelo Oncológico</div>
+                <div class="chip">Experiencia en reparación de daño y trauma complejo infantil y adolescente</div>
+                <div class="chip">Especialización en Mindfulness</div>
+                <div class="chip">Certificada en Psicoterapia Breve</div>
+            </div>
+        </section>
+
+        <!-- AGENDA -->
+        <section id="agenda" class="section agenda">
+            <div class="section-header">
+                <h2>Agenda tu sesión</h2>
+                <p>Coordina tu hora de forma rápida por WhatsApp o correo.</p>
+            </div>
+            <div class="agenda-options">
+                <div class="agenda-card">
+                    <h3>Agendar por WhatsApp</h3>
+                    <p>Envíame un mensaje indicando tu disponibilidad y motivo de consulta.</p>
+                    <a href="https://wa.me/56946842365" target="_blank" class="btn-primary full">
+                        Escribir por WhatsApp
+                    </a>
+                </div>
+                <div class="agenda-card">
+                    <h3>Agendar por correo</h3>
+                    <p>Si lo prefieres, también podemos coordinar por email con más detalle.</p>
+                    <a href="mailto:ps.britanyeb@gmail.com?subject=Agenda%20de%20hora" class="btn-secondary full">
+                        Escribir a ps.britanyeb@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="agenda-note">
+                <p>
+                    <strong>Importante:</strong> En situaciones de riesgo vital o urgencia grave,
+                    dirígete a un servicio de urgencias o comunícate con los números oficiales de emergencia.
+                </p>
+            </div>
+        </section>
+
+        <!-- UBICACION -->
+        <section id="ubicacion" class="section ubicacion">
+            <div class="section-header">
+                <h2>Ubicación del box terapéutico</h2>
+                <p>Atención presencial en pleno Coronel.</p>
+            </div>
+            <div class="ubicacion-layout">
+                <div class="ubicacion-text">
+                    <p><strong>Dirección:</strong> Manuel Montt #455, Coronel, 2° piso.</p>
+                    <p>
+                        Box terapéutico diseñado para entregar privacidad, comodidad y un ambiente
+                        cálido para tu proceso terapéutico.
+                    </p>
+                    <p>
+                        Puedes llegar caminando desde el centro de Coronel o en locomoción colectiva.
+                        Al agendar recibirás indicaciones detalladas para tu primera sesión.
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Manuel+Montt+455+Coronel" target="_blank" class="btn-secondary">
+                        Ver en Google Maps
+                    </a>
+                </div>
+                <div class="ubicacion-map-placeholder">
+                    <span>Mapa</span>
+                    <p>Al hacer clic en “Ver en Google Maps” se abrirá la ubicación exacta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section contacto">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Si tienes dudas antes de agendar, puedes escribirme con confianza.</p>
+            </div>
+            <div class="contact-layout">
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <label>
+                        Nombre
+                        <input type="text" name="nombre" required />
+                    </label>
+                    <label>
+                        Correo electrónico
+                        <input type="email" name="email" required />
+                    </label>
+                    <label>
+                        Asunto
+                        <input type="text" name="asunto" placeholder="Ej: Consulta por psicoterapia individual" required />
+                    </label>
+                    <label>
+                        Mensaje
+                        <textarea name="mensaje" rows="4" placeholder="Cuéntame brevemente en qué te gustaría trabajar" required></textarea>
+                    </label>
+                    <button type="submit" class="btn-primary full">Enviar mensaje</button>
+                    <p class="contact-disclaimer">
+                        Este formulario no reemplaza la atención de urgencia ni las líneas de ayuda en crisis.
+                    </p>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Datos de contacto directo</h3>
+                    <p><strong>Correo:</strong> ps.britanyeb@gmail.com</p>
+                    <p><strong>WhatsApp:</strong> +56 9 4684 2365</p>
+                    <p><strong>Teléfono fijo:</strong> 44 3057167</p>
+                    <p><strong>Dirección:</strong> Manuel Montt #455, Coronel (2° piso)</p>
+                    <p class="contact-extra">
+                        Atención online a todo Chile y presencial en Coronel. Al agendar, recibirás instrucciones
+                        completas para tu primera sesión.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL CRISIS -->
+    <div id="crisis-modal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal">
+            <h2>Si estás en crisis ahora mismo</h2>
+            <p>
+                Respira profundo. No estás solo/a. Algunas acciones que puedes tomar:
+            </p>
+            <ul>
+                <li>Llamar a una persona de confianza y contarle cómo te sientes.</li>
+                <li>Contactar a una línea de ayuda en crisis o servicio de urgencias.</li>
+                <li>Si estás en Chile y hay riesgo vital, llama al <strong>131 (SAMU)</strong> o acude al servicio de urgencias más cercano.</li>
+            </ul>
+            <div class="modal-actions">
+                <a href="https://wa.me/56946842365" target="_blank" class="btn-primary full">Hablar por WhatsApp</a>
+                <a href="tel:131" class="btn-emergencia full">Llamar 131 (Chile)</a>
+                <button type="button" class="btn-secondary full" onclick="closeCrisisModal()">Cerrar</button>
+            </div>
+            <p class="modal-footnote">
+                Esta página no reemplaza la atención de emergencia. Si tu vida o la de alguien está en peligro,
+                busca ayuda presencial de inmediato.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Britany Escalona B. · Psicóloga Clínica · Sitio informativo de salud mental.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
